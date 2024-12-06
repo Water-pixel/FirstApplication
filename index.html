@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IT School UI</title>
+
+    <!-- Includem font ul de pe Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Includ fisierul pentru iconite -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&"
+    />
+    <!-- Includem stilurile CSS -->
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/home.css" />
+    <!-- Includem animate style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <a href="index.html" class="logo-link">
+            <img src="Images/itschool-logo.png" alt="it-logo" />
+          </a>
+          <div class="menu-icon-container">
+            <!-- Aici imi inserez iconita pentru mobile Menu -->
+            <span class="material-symbols-outlined menu-icon"> menu </span>
+            <input type="checkbox" />
+            <ul>
+              <li><a href="Pages/courses.html">Cursuri Online</a></li>
+              <li class="about-us">
+                <a href="Pages/about.html">
+                  Despre Noi
+                  <!-- Includ iconita de Arrow Down -->
+                  <span class="material-symbols-outlined arrow-down-icon">
+                    arrow_drop_down
+                  </span>
+                </a>
+                <!-- Aici este sub meniul care apare la hover -->
+                <div class="submenu">
+                  <a href="index.html">IT School</a>
+                  <a href="Pages/about.html">Traineri</a>
+                </div>
+              </li>
+              <li><a href="Pages/contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="welcome">
+        <div class="container">
+          <h1 class="animate__animated animate__flipInX">Bine ai venit!</h1>
+          <p>
+            Accelerator de cariere in <span>{</span>web development<span
+              >}</span
+            >
+          </p>
+          <p>
+            Aici gasesti cursuri de IT pentru incepatori cu certificare.
+            <img src="Images/microsoft.png" alt="Microsoft" />
+            <img src="Images/adobe.png" alt="Adobe" />
+            <img src="Images/apple.png" alt="Apple" />
+            <img src="Images/minister.png" alt="Minister" />
+          </p>
+          <a
+            href="Pages/courses.html"
+            class="animate__animated animate__flipInX"
+            >Afla mai multe</a
+          >
+        </div>
+      </section>
+      <!-- Mai jos definim cursurile -->
+
+      <section class="courses">
+        <div class="container">
+          <div class="container grid">
+            <h2 class="bounce animate__animated animate__bounce">
+              Calendar Cursuri
+            </h2>
+            <div class="courses-container">
+              <div class="courses-wrapper">
+                <div class="content">
+                  <h3>Python</h3>
+                  <div class="badges">
+                    <span class="date">
+                      <span class="material-symbols-outlined"> today </span>
+                      <span>In curand</span>
+                    </span>
+                    <span class="place">
+                      <span class="material-symbols-outlined">
+                        location_on
+                      </span>
+                      <span>Online</span>
+                    </span>
+                  </div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <!-- Al doilea curs -->
+              <div class="courses-wrapper">
+                <div class="content">
+                  <h3>Web Development</h3>
+                  <div class="badges">
+                    <span class="date">
+                      <span class="material-symbols-outlined"> today </span>
+                      <span>In curand</span>
+                    </span>
+                    <span class="place">
+                      <span class="material-symbols-outlined">
+                        location_on
+                      </span>
+                      <span>Online</span>
+                    </span>
+                  </div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <!-- Al treilea curs -->
+              <div class="courses-wrapper">
+                <div class="content">
+                  <h3>Intro in IT</h3>
+                  <div class="badges">
+                    <span class="date">
+                      <span class="material-symbols-outlined"> today </span>
+                      <span>13.01.2025</span>
+                    </span>
+                    <span class="place">
+                      <span class="material-symbols-outlined">
+                        location_on
+                      </span>
+                      <span>Online</span>
+                    </span>
+                  </div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <!-- Al patrulea curs -->
+              <div class="courses-wrapper">
+                <div class="content">
+                  <h3>Java</h3>
+                  <div class="badges">
+                    <span class="date">
+                      <span class="material-symbols-outlined"> today </span>
+                      <span>In curand</span>
+                    </span>
+                    <span class="place">
+                      <span class="material-symbols-outlined">
+                        location_on
+                      </span>
+                      <span>Online</span>
+                    </span>
+                  </div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <!-- Al cincelea curs -->
+              <div class="courses-wrapper">
+                <div class="content">
+                  <h3>Programare C++</h3>
+                  <div class="badges">
+                    <span class="date">
+                      <span class="material-symbols-outlined"> today </span>
+                      <span>21.01.2023</span>
+                    </span>
+                    <span class="place">
+                      <span class="material-symbols-outlined">
+                        location_on
+                      </span>
+                      <span>Online</span>
+                    </span>
+                  </div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <!-- Al saselea curs -->
+              <div class="courses-wrapper">
+                <div class="content">
+                  <h3>Graphic Design</h3>
+                  <div class="badges">
+                    <span class="date">
+                      <span class="material-symbols-outlined"> today </span>
+                      <span>20.02.2025</span>
+                    </span>
+                    <span class="place">
+                      <span class="material-symbols-outlined">
+                        location_on
+                      </span>
+                      <span>Online</span>
+                    </span>
+                  </div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Mai jos este sectiunea Despre Noi -->
+      <section class="who-we-are">
+        <div class="container grid">
+          <h2>Ce este IT School?</h2>
+          <p>
+            IT School este o comunitate educațională de IT, locul unde
+            pasionații acestui domeniu se întâlnesc cu viitorii profesioniști.
+            Timp de peste 7 ani, am construit alături de trainerii IT School un
+            mediu de învățare specializat pentru toți cei care își doresc să
+            descopere oportunitățile acestui domeniu. Ești pregătit să faci
+            parte din comunitatea IT School?
+          </p>
+          <div class="images-container">
+            <div class="image-wrapper">
+              <img src="Images/about-us-1.jpeg" alt="Traineri IT School" />
+            </div>
+            <div class="image-wrapper">
+              <img src="Images/about-us-2.jpeg" alt="Traineri IT School" />
+            </div>
+            <div class="image-wrapper">
+              <img src="Images/about-us-3.jpeg" alt="Traineri IT School" />
+            </div>
+            <div class="image-wrapper">
+              <img src="Images/about-us-4.jpeg" alt="Traineri IT School" />
+            </div>
+            <div class="image-wrapper">
+              <img src="Images/about-us-5.jpeg" alt="Traineri IT School" />
+            </div>
+            <div class="image-wrapper">
+              <img src="Images/about-us-6.jpeg" alt="Traineri IT School" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Mai jos este sectiunea de parteneri -->
+      <section id="partners">
+        <div class="container">
+          <h2>Parteneri</h2>
+          <div class="partners-container">
+            <div class="image-wrapper">
+              <img
+                src="Images/parteneri/123formbuilder.png"
+                alt="FormBuilder"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img src="Images/parteneri/amdaris.png" alt="Amdaris" />
+            </div>
+            <div class="image-wrapper">
+              <img src="Images/parteneri/cognizant.png" alt="Cognizant" />
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="Images/parteneri//dreamproduction.png"
+                alt="DreamProduction"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img src="Images/parteneri/fortech.png" alt="Fortech" />
+            </div>
+            <div class="image-wrapper">
+              <img src="Images/parteneri/instapage.png" alt="Instapage" />
+            </div>
+            <div class="image-wrapper">
+              <img src="Images/parteneri/nagarro.png" alt="Nagarro" />
+            </div>
+            <div class="image-wrapper">
+              <img src="Images/parteneri/ness.png" alt="Ness" />
+            </div>
+            <div class="image-wrapper">
+              <img src="Images/parteneri/toluna.png" alt="Toluna" />
+            </div>
+            <div class="image-wrapper">
+              <img src="Images/parteneri/visma.png" alt="Visma" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p>IT School Romania 2024. Toate drepturile rezervate.</p>
+      </div>
+    </footer>
+  </body>
+</html>

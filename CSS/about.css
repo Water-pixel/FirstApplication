@@ -1,0 +1,100 @@
+/* Va trebui sa adaugam stilizarea pentru mesajul de welcome */
+.welcome {
+  background-color: var(--bg-primary);
+  height: 40vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome h1 {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .welcome h1 {
+    font-size: 2rem;
+  }
+}
+/* Avem stilizarea mai jos pentru card-urile trainerilor */
+
+.trainers .container {
+  padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.trainers .trainers-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: var(--spacing-large);
+}
+
+.trainers .trainer-wrapper {
+  width: 25%;
+  padding: 0 var(--spacing-small);
+}
+
+.trainers .trainer-wrapper h3 {
+  width: 100%;
+  padding: var(--spacing-tiny);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid var(--bg-primary);
+  border-radius: 5px;
+  background-color: var(--bg-primary);
+
+  margin-top: -25px;
+  margin-bottom: var(--spacing-medium);
+  filter: opacity(0.9);
+}
+
+.trainers .trainer {
+  padding: var(--spacing-small);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: calc(2 * var(--spacing-xl));
+
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trainers .image-wrap {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -70px;
+  filter: grayscale(1);
+}
+
+.trainer img:hover {
+  filter: grayscale(0);
+}
+@media (max-width: 992px) {
+  /* Adaugam stilizarea pentru card-urile trainerilor pe mobil */
+  .trainers .trainer-wrapper {
+    width: calc(100% / 3);
+  }
+}
+
+@media (max-width: 768px) {
+  .trainers .trainer-wrapper {
+    width: 50%;
+  }
+  .trainers .trainer {
+    min-height: 310px;
+  }
+}
+
+@media (max-width: 576px) {
+  .trainers .trainer-wrapper {
+    width: 100%;
+  }
+  .trainers .trainer {
+    min-height: 0px;
+  }
+  .trainer p {
+    margin-bottom: var(--spacing-medium);
+  }
+}

@@ -1,0 +1,130 @@
+.welcome {
+  background-color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+@media (max-width: 768px) {
+  .welcome h1 {
+    font-size: 32px;
+  }
+}
+
+.courses h2 {
+  padding-top: var(--spacing-large);
+}
+.courses .container p.main-p,
+.courses .container h2 {
+  text-align: center;
+}
+
+.courses h2,
+.courses p.main-p,
+.courses .courses-container {
+  margin-bottom: var(--spacing-large);
+}
+
+.courses .courses-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.courses .courses-container .course-wrapper {
+  width: calc(100% / 3);
+  padding-right: var(--spacing-small);
+  padding-left: var(--spacing-small);
+}
+
+.courses .courses-container .course-wrapper .course:hover {
+  background-color: rgba(216, 145, 145, 0.5);
+}
+
+.courses .pre-image {
+  width: 100%;
+  height: auto;
+}
+
+.courses .course {
+  padding: var(--spacing-small);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: var(--spacing-medium);
+}
+
+/* Stilizam Details */
+
+.course-wrapper .details {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-small);
+
+  color: grey;
+}
+.course-wrapper .details span {
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+
+.course-wrapper .details .descript {
+  margin-right: 5px;
+  font-size: 16px;
+}
+.course-wrapper .details .material-symbols-outlined {
+  vertical-align: middle;
+}
+
+/* Stilizare Button */
+
+.course-wrapper .course .content a {
+  background-color: var(--button-color);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: var(--spacing-small);
+  width: 100px;
+  text-align: center;
+  color: var(--text-white);
+  margin: 10px;
+}
+
+.course-wrapper .course .content a:hover {
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+}
+/* Stilizare content */
+
+.course .content h3 {
+  text-align: center;
+  padding: var(--spacing-small);
+  color: var(--text-primary);
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.course .content .course-desc {
+  padding: var(--spacing-small);
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.course .content .course-desc img {
+  width: 100px;
+  height: auto;
+  margin-left: var(--spacing-small);
+  margin-bottom: 10px;
+}
+
+/* Stilizari mobile si web */
+@media (max-width: 992px) {
+  .courses .courses-container .course-wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .courses .courses-container .course-wrapper {
+    width: 100%;
+  }
+}
