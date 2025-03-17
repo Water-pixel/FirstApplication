@@ -1,6 +1,8 @@
 # IT School UI - Website
 
 Welcome to **IT School UI**, an educational platform designed to help beginners start their IT careers through certified online courses.
+## Netlify
+- https://pixelaquaprimproject.netlify.app/
 
 ## 🚀 Features
 - 📚 **Online Courses** – Explore and enroll in IT-related courses.
